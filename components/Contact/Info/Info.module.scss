@@ -1,0 +1,48 @@
+@use "/styles/abstracts" as *;
+
+.info {
+  background-color: $color-border-grey;
+  display: grid;
+  gap: 1px;
+  grid-template-columns: 1fr;
+  justify-content: space-between;
+  margin-bottom: $size-14;
+  margin-inline: auto;
+  max-width: 1300px;
+  
+  @include breakpoint(sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include breakpoint(xl) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.item {
+  align-content: start;
+  background-color: $color-white;
+  display: grid;
+  gap: $size-4;
+  justify-items: center;
+  padding: $size-8;
+
+  svg {
+    color: $color-gold;
+    font-size: $size-14;
+  }
+}
+
+.title {
+  font-family: $font-oswald;
+  font-size: $size-5;
+  letter-spacing: 0.12rem;
+}
+
+.content {
+  color: $color-text-grey;
+  font-size: $size-4_5;
+  font-weight: 300;
+  letter-spacing: 0.06rem;
+  text-align: center;
+}

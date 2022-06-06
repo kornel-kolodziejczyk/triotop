@@ -1,0 +1,80 @@
+@use "/styles/abstracts" as *;
+
+.gallery {
+  display: grid;
+  margin-bottom: $size-8;
+}
+
+.images {
+  display: grid;
+  gap: $size-3;
+  margin-top: $size-4_5;
+
+  @include breakpoint(sm) {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  @include breakpoint(md) {
+    grid-template-columns: repeat(4, auto);
+  }
+
+  @include breakpoint(xl) {
+    grid-template-columns: repeat(5, auto);
+  }
+
+  img {
+    cursor: pointer;
+  }
+}
+
+.image {
+  position: relative;
+
+  &:hover .delete {
+    display: block;
+  }
+
+  @include breakpoint(xl) {
+    &:nth-child(8n + 1) {
+      grid-area: span 2 / span 2;
+    }
+
+    &:nth-child(12n + 1) {
+      grid-area: span 2 / span 2;
+    }
+  }
+}
+
+.actions {
+  color: $color-white;
+  cursor: pointer;
+  font-size: $size-5;
+  padding: $size-2;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  svg {
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.delete {
+  display: none;
+}
+
+.admin {
+  margin-top: $size-10;
+  display: grid;
+
+  input {
+    padding-bottom: $size-5;
+    width: 100%;
+  }
+
+  button {
+    justify-self: end;
+  }
+}

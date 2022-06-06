@@ -1,0 +1,47 @@
+@use "/styles/abstracts" as *;
+
+.lightbox {
+  align-items: center;
+  background: $color-lightbox-background;
+  color: $color-white;
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  position: fixed;
+  z-index: $z-index-lightbox;
+
+  & > span {
+    margin: auto !important;
+    max-height: 720px;
+    max-width: 1080px;
+  }
+
+  img {
+    user-select: none;
+  }
+
+  &:hover .actions {
+    display: flex;
+  }
+}
+
+.actions {
+  align-items: center;
+  display: none;
+  inset: 0;
+  justify-content: space-between;
+  padding-inline: $size-5;
+  position: absolute;
+  user-select: none;
+
+  svg {
+    color: $color-white;
+    cursor: pointer;
+    font-size: $size-12;
+    transition: transform 200ms;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}

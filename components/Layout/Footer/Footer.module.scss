@@ -1,0 +1,29 @@
+@use "/styles/abstracts" as *;
+
+.footer {
+  background-color: $color-layout;
+  color: $color-white;
+  font-size: $size-4;
+  padding-bottom: $size-5;
+  padding-top: $size-5;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: $size-8;
+  justify-content: center;
+  align-items: center;
+  gap: $size-5;
+
+  @include breakpoint(sm) {
+    justify-content: space-between;
+  }
+}
+
+.youtube {
+  display: flex;
+  font-size: $size-7;
+  color: $color-youtube;
+  border-radius: 50%;
+  padding: $size-3;
+  background-color: $color-white;
+}

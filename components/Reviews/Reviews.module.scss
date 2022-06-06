@@ -1,0 +1,67 @@
+@use "/styles/abstracts" as *;
+
+.reviews {
+  margin-block: $size-4 $size-8;
+
+  h2 {
+    text-align: center;
+  }
+
+  form {
+    background-color: $color-black-transparent;
+    border-radius: $size-5;
+    display: grid;
+    gap: $size-4;
+    margin-bottom: $size-6;
+    padding: $size-5;
+
+    [data-placeholder]:empty:before {
+      content: attr(data-placeholder);
+      color: $color-text-grey;
+      font-family: $font-open-sans;
+    }
+
+    input {
+      background-color: white;
+      border: none;
+    }
+
+    button {
+      justify-self: end;
+    }
+  }
+}
+
+.emojis {
+  img {
+    cursor: pointer;
+  }
+}
+
+.items {
+  position: relative;
+  display: grid;
+  gap: $size-3;
+}
+
+.notAccepted {
+  display: grid;
+  margin-bottom: $size-3;
+  gap: $size-3;
+}
+
+.accepted {
+  display: grid;
+  gap: $size-3;
+}
+
+.text {
+  background-color: $color-white;
+  padding: $size-5;
+  min-height: 300px;
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}

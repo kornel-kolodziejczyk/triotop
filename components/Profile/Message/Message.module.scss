@@ -1,0 +1,41 @@
+@use "/styles/abstracts/" as *;
+
+.message {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: space-between;
+  background-color: $color-black-transparent;
+  padding: $size-5;
+  border-radius: $size-5;
+}
+
+.name {
+  font-weight: 700;
+}
+
+.text {
+  margin-top: $size-2;
+  font-size: $size-3_5;
+  grid-column: span 2;
+  text-align: justify;
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.date {
+  font-size: $size-3_5;
+  font-style: italic;
+  text-align: right;
+}
+
+.actions {
+  padding-top: $size-3;
+  grid-column: span 2;
+  display: flex;
+  gap: $size-1;
+  flex-wrap: wrap;
+  justify-self: end;
+}

@@ -1,0 +1,82 @@
+@use "./variables" as *;
+
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+@mixin breakpoint($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media ( min-width: #{ map-get( $breakpoints, $breakpoint ) } ) {
+      @content;
+    }
+  } @else if type_of($breakpoint) == number and unit($breakpoint) == px or unit($breakpoint) == em or unit($breakpoint) == rem {
+    @media (min-width: $breakpoint) {
+      @content;
+    }
+  } @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`.";
+  }
+}
+
+@mixin panel {
+  display: grid;
+  justify-content: center;
+  margin: auto;
+  padding-block: $size-10;
+
+  @include breakpoint(sm) {
+    padding-block: $size-14;
+  }
+
+  @include breakpoint(md) {
+    padding-block: $size-20;
+  }
+}
+
+@mixin button {
+  align-items: center;
+  background-color: $color-orange-lighter;
+  border: none;
+  box-shadow: $shadow-button;
+  color: $color-white;
+  cursor: pointer;
+  font-size: $size-4;
+  font-family: $font-open-sans;
+  font-weight: 600;
+  height: 40px;
+  justify-content: center;
+  margin: 0;
+  padding-inline: $size-4;
+  touch-action: manipulation;
+  transition: all 250ms;
+  user-select: none;
+
+  &:active {
+    &:enabled {
+      background-color: $color-orange-darker;
+      box-shadow: $shadow-button-active;
+      transform: translateY(0);
+    }
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &:hover {
+    &:enabled {
+      transform: translateY(-1px);
+      box-shadow: $shadow-button-enabled;
+    }
+  }
+
+  &:focus {
+    &:enabled {
+      box-shadow: $shadow-button-enabled;
+    }
+  }
+}

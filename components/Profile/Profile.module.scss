@@ -1,0 +1,40 @@
+@use "/styles/abstracts" as *;
+
+.profile {
+  margin-block: $size-14;
+
+  input[type="file"] {
+    display: none;
+  }
+
+  input[type="button"] {
+    color: #777;
+    text-align: start;
+  }
+
+  form {
+    display: grid;
+
+    @include breakpoint(md) {
+      display: flex;
+    }
+
+    input {
+      
+    }
+
+    button {
+      flex: unset;
+    }
+  }
+}
+
+.messages {
+  margin-top: $size-14;
+  position: relative;
+}
+
+.content {
+  display: grid;
+  gap: $size-2;
+}

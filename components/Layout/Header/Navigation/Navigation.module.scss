@@ -1,0 +1,38 @@
+@use "/styles/abstracts" as *;
+
+.navigation {
+  display: none;
+  font-family: $font-oswald;
+  font-size: $size-4_5;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+  @media (min-width: 1000px) {
+    display: flex;
+  }
+
+  ul {
+    display: flex;
+    gap: $size-7;
+    list-style: none;
+    margin: 0;
+
+    @include breakpoint(xl) {
+      gap: $size-8;
+    }
+
+    li {
+      cursor: pointer;
+
+      &:hover {
+        transform: translateY(-1px);
+        color: $color-gold;
+      }
+    }
+  }
+}
+
+.active {
+  color: $color-gold;
+}

@@ -1,0 +1,30 @@
+@use "/styles/abstracts" as *;
+
+.carousel {
+  position: relative;
+
+  &:hover .actions {
+    display: flex;
+  }
+}
+
+.actions {
+  align-items: center;
+  display: none;
+  inset: 0;
+  justify-content: space-between;
+  padding-inline: $size-5;
+  position: absolute;
+  user-select: none;
+
+  svg {
+    color: $color-white;
+    cursor: pointer;
+    font-size: $size-12;
+    transition: transform 200ms;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}

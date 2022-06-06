@@ -1,0 +1,19 @@
+@use "/styles/abstracts" as *;
+
+.header {
+  font-size: $size-6;
+  margin-bottom: $size-6;
+  margin-inline: auto;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include breakpoint(sm) {
+    font-size: $size-7;
+    margin-bottom: $size-7;
+  }
+
+  @include breakpoint(md) {
+    font-size: $size-8;
+    margin-bottom: $size-8;
+  }
+}

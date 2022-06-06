@@ -1,0 +1,6 @@
+@use "/styles/abstracts" as *;
+
+.demo {
+  display: grid;
+  gap: $size-4;
+}

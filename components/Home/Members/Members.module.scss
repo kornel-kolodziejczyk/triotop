@@ -1,0 +1,25 @@
+@use "/styles/abstracts" as *;
+
+.members {
+  @include panel;
+  background-color: $color-white;
+  max-width: 1100px;
+}
+
+.content {
+  margin-top: $size-4_5;
+  display: grid;
+  gap: $size-6;
+
+  @include breakpoint(sm) {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  @include breakpoint(md) {
+    grid-template-columns: repeat(3, auto);
+  }
+
+  @include breakpoint(xl) {
+    gap: $size-10;
+  }
+}

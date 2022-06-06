@@ -1,0 +1,40 @@
+@use '/styles/abstracts' as *;
+
+.contact {
+  margin: auto;
+  max-width: 1400px;
+  padding-block: $size-4;
+}
+
+.form {
+  form {
+    background-color: $color-black-transparent;
+    border-radius: $size-5;
+    display: grid;
+    gap: $size-4;
+    margin-bottom: $size-6;
+    overflow: hidden;
+    padding: $size-5;
+
+    input,
+    textarea {
+      background-color: white;
+      border-radius: $size-4;
+      border: none;
+      width: 100%;
+    }
+
+    textarea {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      resize: none;
+      height: 300px;
+      padding-block: $size-4;
+    }
+
+    button {
+      justify-self: end;
+    }
+  }
+}
+

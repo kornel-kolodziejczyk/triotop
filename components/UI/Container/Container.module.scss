@@ -1,0 +1,13 @@
+@use "/styles/abstracts" as *;
+
+.container {
+  display: grid;
+  margin: auto;
+  max-width: 1500px;
+  padding-inline: $size-4;
+  width: 100%;
+
+  @include breakpoint(md) {
+    padding-inline: $size-8;
+  }
+}

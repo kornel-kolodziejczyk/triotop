@@ -1,0 +1,13 @@
+@use "/styles/abstracts" as *;
+
+.loader {
+  align-content: center;
+  color: $color-black;
+  display: grid;
+  font-weight: 900;
+  gap: $size-5;
+  justify-items: center;
+  padding: $size-30 $size-30;
+  text-align: center;
+  z-index: $z-index-loader;
+}

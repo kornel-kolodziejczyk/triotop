@@ -1,0 +1,32 @@
+@use "/styles/abstracts" as *;
+
+.member {
+  align-content: flex-start;
+  display: grid;
+  overflow: hidden;
+
+  img {
+    border-radius: 8px;
+  }
+
+  h1 {
+    color: $color-gold;
+    font-size: $size-6;
+    font-weight: 400;
+    margin: $size-5 0 $size-2;
+    text-transform: capitalize;
+  }
+
+  h2 {
+    font-size: $size-4;
+    font-style: italic;
+    font-weight: 400;
+    margin: 0 0 $size-5 0;
+  }
+
+  p {
+    color: $color-text-grey;
+    margin: 0;
+    text-align: justify;
+  }
+}

@@ -1,0 +1,47 @@
+@use "/styles/abstracts" as *;
+
+.videos {
+  display: grid;
+  position: relative;
+
+  form {
+    display: flex;
+    gap: $size-1;
+    margin-top: $size-4;
+  }
+}
+
+.content {
+  display: grid;
+  gap: $size-4;
+  grid-template-columns: 1fr;
+  margin-top: $size-4;
+  
+  @include breakpoint(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @include breakpoint(xl) {
+    grid-template-columns: repeat(3, 1fr);
+    
+  }
+  
+  iframe {
+    width: 100%;
+  }
+}
+
+.video {
+  display: grid;
+  gap: $size-1;
+  width: 100%;
+}
+
+.actions {
+  display: flex;
+  gap: $size-1;
+
+  button {
+    flex: 1;
+  }
+}

@@ -1,0 +1,8 @@
+@use "/styles/abstracts" as *;
+
+.login {
+  margin-inline: auto;
+  margin-block: $size-20;
+  width: 100%;
+  max-width: 25rem;
+}

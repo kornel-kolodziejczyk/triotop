@@ -1,0 +1,21 @@
+@use "/styles/abstracts" as *;
+
+.route {
+  border-bottom: 1px solid $color-grey;
+  display: block;
+  font-size: $size-6;
+  font-weight: 500;
+  margin: 0;
+  padding-block: $size-4;
+  text-align: center;
+
+  @include breakpoint(sm) {
+    font-size: $size-7;
+    padding-block: $size-5;
+  }
+  
+  @include breakpoint(md) {
+    font-size: $size-8;
+    padding-block: $size-6;
+  }
+}

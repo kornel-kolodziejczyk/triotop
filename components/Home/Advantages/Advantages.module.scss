@@ -1,0 +1,40 @@
+@use "/styles/abstracts" as *;
+
+.advantages {
+  @include panel;
+  background-color: $color-background-dark;
+  color: $color-white;
+
+  ul {
+    display: grid;
+    gap: $size-5;
+    list-style-type: none;
+    padding-inline-start: 0;
+
+    @include breakpoint(md) {
+      font-size: $size-4_5;
+    }
+
+    li {
+      align-items: center;
+      display: grid;
+      gap: $size-5;
+      grid-template-columns: repeat(2, auto);
+      justify-content: start;
+      text-align: left;
+    }
+  }
+
+  svg {
+    color: $color-gold;
+    font-size: $size-7;
+    
+    @include breakpoint(sm) {
+      font-size: $size-8;
+    }
+
+    @include breakpoint(md) {
+      font-size: $size-9;
+    }
+  }
+}

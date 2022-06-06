@@ -1,0 +1,39 @@
+@use "/styles/abstracts" as *;
+
+.files {
+  display: grid;
+  background-color: $color-background-dark;
+  padding: 1px;
+  gap: 1px;
+  margin-bottom: $size-5;
+}
+
+.cell {
+  background-color: $color-white;
+  padding: $size-2;
+  text-align: center;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+
+  .cell {
+    background-color: $color-orange;
+    color: $color-white;
+    font-weight: 600;
+  }
+}
+
+.content {
+  display: grid;
+  gap: 1px;
+}
+
+.file {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+}
+

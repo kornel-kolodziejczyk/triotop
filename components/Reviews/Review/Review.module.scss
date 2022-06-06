@@ -1,0 +1,41 @@
+@use "/styles/abstracts" as *;
+
+.review {
+  background-color: $color-black-transparent;
+  border-radius: $size-5;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: space-between;
+  padding: $size-5;
+}
+
+.name {
+  font-weight: 700;
+}
+
+.text {
+  font-size: $size-3_5;
+  grid-column: span 2;
+  margin-top: $size-2;
+  text-align: justify;
+
+  img {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+.date {
+  font-size: $size-3_5;
+  font-style: italic;
+  text-align: right;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $size-1;
+  grid-column: span 2;
+  justify-self: end;
+  padding-top: $size-3;
+}
