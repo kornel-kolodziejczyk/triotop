@@ -1,32 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&display=swap");
 
 // colors
-$color-background: #f0f4f5;
+$color-background-dark: #252525;
+$color-background-grey: #f7f7f7;
 $color-black-transparent: rgba(0, 0, 0, 0.05);
 $color-black: #000;
-$color-green: green;
-$color-grey: rgb(217, 219, 221);
-// $color-layout: #b5d635;
-$color-layout: #213242;
-$color-orange-darker: #c85000;
-$color-orange-lighter: rgb(251, 131, 50);
-$color-orange: #f27d00;
-$color-red: red;
-$color-white-transparent: rgba(255, 255, 255, 0.7);
-$color-white: #fff;
-$color-form: #eeeeee;
-$color-yellow: #f1cd7e;
-$color-blue-light: rgb(199, 200, 201);
-$color-blue-darker: #3c5a74;
-$color-gold: #ffa900;
-$color-youtube: #ff0000;
-
 $color-border-grey: #dfe1ea;
-$color-background-grey: #f7f7f7;
-$color-background-dark: #252525;
-$color-text-grey: #838386;
+$color-gold: #ffa900;
+$color-green: #008000;
+$color-grey: rgb(217, 219, 221);
+$color-layout: #213242;
 $color-lightbox-background: rgba(0, 0, 0, 0.98);
-$color-text-contact: #29293a;
+$color-orange-darker: #c85000;
+$color-orange-lighter: #fb8332;
+$color-orange: #f27d00;
+$color-red: #ff0000;
+$color-text-grey: #838386;
+$color-white: #fff;
 
 // fonts
 $font-arial: "Arial", sans-serif;

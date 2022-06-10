@@ -10,7 +10,11 @@ const Info: FC = () => (
     <div className={classes.item}>
       <MdLocationOn />
       <div className={classes.title}>ADRES</div>
-      <div className={classes.content}>Siennica Różana 22-304</div>
+      <div className={classes.content}>
+        Siennica Królewska Duża,
+        <br />
+        Siennica Różana 22-304
+      </div>
     </div>
     <div className={classes.item}>
       <HiPhone />
@@ -30,7 +34,7 @@ const Info: FC = () => (
       <BiCalendar />
       <div className={classes.title}>GODZINY KONTAKTU</div>
       <div className={classes.content}>
-        Poniedziałek - Sobota
+        Poniedziałek - Niedziela
         <br />
         8:00 - 22:00
       </div>
