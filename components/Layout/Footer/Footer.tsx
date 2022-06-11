@@ -6,7 +6,12 @@ const Footer = () => (
   <footer className={classes.footer}>
     <Logo type="light" />
     <div>
-      Copyright © 2022 <span>Kornel Kołodziejczyk</span>
+      Copyright © 2022{" "}
+      <span>
+        <a href="https://www.kornel-kolodziejczyk.pl/" target="_blank" rel="noreferrer noopener">
+          Kornel Kołodziejczyk
+        </a>
+      </span>
     </div>
   </footer>
 );

@@ -13,7 +13,7 @@ const Info: FC = () => (
       <div className={classes.content}>
         Siennica Królewska Duża,
         <br />
-        Siennica Różana 22-304
+        22-304 Siennica Różana
       </div>
     </div>
     <div className={classes.item}>

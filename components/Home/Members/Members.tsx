@@ -11,7 +11,7 @@ const Members: FC = () => (
       <div className={classes.content}>
         <Member
           name="mariusz"
-          titles="Gitarzysta, perkusista"
+          titles="Gitarzysta"
           text="Na gitarze gra od 27 lat. Potrafi grać także na instrumentach klawiszowych oraz na perkusji. Był instruktorem nauki gry na gitarze oraz keyboard w GCK Wojsławice. Ukończył także Akademię Realizacji Dźwięku w Warszawie jako Realizator Dźwięku Estradowego. Dzięki wiedzy zdobytej podczas szkolenia, zajmuje się nagłaśnianiem imprez plenerowych jako Akustyk dźwięku. Obecnie instruktor Domu Kultury w Krasnymstawie."
         />
         <Member
