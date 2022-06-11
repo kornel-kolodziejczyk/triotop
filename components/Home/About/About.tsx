@@ -9,7 +9,7 @@ const About: FC = () => (
       <Header>Kim jesteśmy</Header>
       <div className={classes.content}>
         <p>
-          Jesteśmy trzyosobowym coverowym zespołem muzycznym istniejącym od 1998 roku. Zespół składa się z wokalistki oraz dwóch muzyków grających na instrumentach. Posiadamy profesjonalny zestaw
+          Jesteśmy trzyosobowym coverowym zespołem muzycznym istniejącym od 1994 roku. Zespół składa się z wokalistki oraz dwóch muzyków grających na instrumentach. Posiadamy profesjonalny zestaw
           nagłośnieniowy i sprzęt oświetleniowy.
         </p>
         <blockquote>
