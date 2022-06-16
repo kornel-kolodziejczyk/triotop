@@ -2,7 +2,6 @@ import { FC, FormEvent, FormEventHandler, useEffect, useRef, useState } from "re
 
 import Button from "../UI/Button/Button";
 import Emoji from "../UI/Emoji/Emoji";
-import Header from "../UI/Header/Header";
 import { INotification } from "../../interfaces/notification";
 import { IReview } from "../../interfaces/review";
 import Loader from "../UI/Loader/Loader";
@@ -18,7 +17,7 @@ const Reviews: FC = () => {
   const [notification, setNotification] = useState<INotification | null>(null);
   const [name, setName] = useState("");
   const [text, setText] = useState("");
-  const textRef = useRef<HTMLDivElement | null>(null);
+  const textRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const getReviews = async () => {
